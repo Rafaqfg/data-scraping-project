@@ -42,7 +42,7 @@ def scrape_noticia(html_content):
     REPLACE_BEFORE = '\xa0'
     REPLACE_AFTER = ''
     selector = Selector(text=html_content)
-    soup = BeautifulSoup(text=html_content)
+    soup = BeautifulSoup(html_content)
 
     url = soup.select_one('link[rel="canonical"]')['href']
     title = selector.css("h1.entry-title::text").get()
