@@ -20,4 +20,14 @@ def top_5_news():
 
 # Requisito 11
 def top_5_categories():
-    """Seu código deve vir aqui"""
+    db = get_collection()
+
+    get_categories = list(db.aggregate([
+        {"$group": {"_id": "$category", "count": {"$sum": 1}}},
+        {"$sort": {"count": -1, "_id": 1}}, ]
+    ))
+
+    return [category["_id"] for category in get_categories[0:5]]
+
+# https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/
+# https://www.mongodb.com/docs/manual/core/aggregation-pipeline/
