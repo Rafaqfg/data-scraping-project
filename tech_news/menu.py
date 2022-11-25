@@ -65,5 +65,10 @@ def get_top_5_news():
     menu()
 
 
+def get_top_5_categories():
+    print(top_5_categories())
+    menu()
+
+
 def menu():
     ...
