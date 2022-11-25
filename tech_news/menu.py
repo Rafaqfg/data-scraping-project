@@ -52,5 +52,12 @@ def get_news_by_tag():
     menu()
 
 
+def get_news_by_category():
+    inserted_data = input("Category:")
+    news_by_category = search_engine.search_by_category(inserted_data)
+    print(news_by_category)
+    menu()
+
+
 def menu():
     ...
