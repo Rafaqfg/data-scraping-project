@@ -1,4 +1,5 @@
 from tech_news.scraper import get_tech_news
+from tech_news.analyzer import search_engine
 
 
 def menu_options():
@@ -27,6 +28,13 @@ def get_news():
 
     scrapped_news = get_tech_news(inserted_data)
     print(scrapped_news)
+    menu()
+
+
+def get_news_by_title():
+    inserted_data = input("Title:")
+    news_by_title = search_engine.search_by_title(inserted_data)
+    print(news_by_title)
     menu()
 
 
