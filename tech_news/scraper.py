@@ -52,7 +52,6 @@ def scrape_noticia(html_content):
     removing_chars = re.compile('<.*?>')
     cleaning_text = re.sub(removing_chars, '', summary)
 
-
     return({
          "url": url,
          "title": title.replace(REPLACE_BEFORE, REPLACE_AFTER),
