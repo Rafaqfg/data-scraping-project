@@ -1,5 +1,6 @@
 from tech_news.scraper import get_tech_news
 from tech_news.analyzer import search_engine
+from tech_news.analyzer.ratings import top_5_news, top_5_categories
 
 
 def menu_options():
@@ -56,6 +57,11 @@ def get_news_by_category():
     inserted_data = input("Category:")
     news_by_category = search_engine.search_by_category(inserted_data)
     print(news_by_category)
+    menu()
+
+
+def get_top_5_news():
+    print(top_5_news())
     menu()
 
 
