@@ -39,7 +39,7 @@ def scrape_noticia(html_content):
     REPLACE_BEFORE = '\xa0'
     REPLACE_AFTER = ''
     selector = Selector(text=html_content)
-    soup = BeautifulSoup(html_content)
+    soup = BeautifulSoup(html_content, features='lxml')
 
     url = soup.select_one('link[rel="canonical"]')['href']
     title = selector.css("h1.entry-title::text").get()
@@ -51,6 +51,7 @@ def scrape_noticia(html_content):
     category = selector.css("span.label::text").get()
     removing_chars = re.compile('<.*?>')
     cleaning_text = re.sub(removing_chars, '', summary)
+
 
     return({
          "url": url,
