@@ -57,5 +57,5 @@ Run the menu.py file
 | Create the analyzer_menu function	| :heavy_check_mark:
 | Implement the menu features | :heavy_check_mark:
 
-## Gif of the application code
-![]()
+## Gif of the application
+![](https://github.com/Rafaqfg/data-scraping-project-Python/blob/main/data_scrapping.gif)
