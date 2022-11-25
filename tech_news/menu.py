@@ -1,6 +1,7 @@
 from tech_news.scraper import get_tech_news
 from tech_news.analyzer import search_engine
 from tech_news.analyzer.ratings import top_5_news, top_5_categories
+import sys
 
 
 def menu_options():
@@ -76,4 +77,23 @@ def end():
 
 
 def menu():
-    ...
+    options = {
+        "0": get_news,
+        "1": get_news_by_title,
+        "2": get_news_by_date,
+        "3": get_news_by_tag,
+        "4": get_news_by_category,
+        "5": get_top_5_news,
+        "6": get_top_5_categories,
+        "7": end,
+    }
+    menu_options()
+    try:
+        start = input()
+        options[start]()
+    except KeyError:
+        print("Invalid option", file=sys.stderr)
+    menu()
+
+
+input(menu())
