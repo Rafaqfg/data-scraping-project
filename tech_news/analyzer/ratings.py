@@ -1,7 +1,6 @@
 from tech_news.database import get_collection
 
 
-# Requisito 10
 def top_5_news():
     db = get_collection()
 
@@ -18,7 +17,6 @@ def top_5_news():
     return [tuple([new["title"], new["url"]]) for new in news]
 
 
-# Requisito 11
 def top_5_categories():
     db = get_collection()
 
@@ -29,5 +27,6 @@ def top_5_categories():
 
     return [category["_id"] for category in get_categories[0:5]]
 
+# references:
 # https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/
 # https://www.mongodb.com/docs/manual/core/aggregation-pipeline/

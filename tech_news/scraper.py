@@ -4,7 +4,6 @@ from parsel import Selector
 from bs4 import BeautifulSoup
 import re
 from tech_news.database import create_news
-# Requisito 1
 
 
 def fetch(url):
@@ -21,14 +20,12 @@ def fetch(url):
         return None
 
 
-# Requisito 2
 def scrape_novidades(html_content):
     selector = Selector(text=html_content)
     title = selector.css("h2.entry-title a::attr(href)").getall()
     return title
 
 
-# Requisito 3
 def scrape_next_page_link(html_content):
     try:
         selector = Selector(text=html_content)
@@ -38,7 +35,6 @@ def scrape_next_page_link(html_content):
         return None
 
 
-# Requisito 4
 def scrape_noticia(html_content):
     REPLACE_BEFORE = '\xa0'
     REPLACE_AFTER = ''
@@ -71,7 +67,6 @@ def scrape_noticia(html_content):
         })
 
 
-# Requisito 5
 def get_tech_news(amount):
     url = "https://blog.betrybe.com/"
     url_list = []
