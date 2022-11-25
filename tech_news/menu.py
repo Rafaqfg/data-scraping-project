@@ -38,5 +38,12 @@ def get_news_by_title():
     menu()
 
 
+def get_news_by_date():
+    inserted_data = input("Date(aaaa-mm-dd):")
+    news_by_date = search_engine.search_by_date(inserted_data)
+    print(news_by_date)
+    menu()
+
+
 def menu():
     ...
