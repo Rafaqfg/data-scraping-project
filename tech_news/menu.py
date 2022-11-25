@@ -1,4 +1,6 @@
-# Requisito 12
+from tech_news.scraper import get_tech_news
+
+
 def menu_options():
     print(
         "Choose one option:"
@@ -15,5 +17,18 @@ def menu_options():
     )
 
 
-def analyzer_menu():
-    """Seu código deve vir aqui"""
+def get_news():
+    inserted_data = None
+    while not isinstance(inserted_data, int):
+        try:
+            inserted_data = int(input("How many news to be scrapped:"))
+        except ValueError:
+            print("Must be an integer.")
+
+    scrapped_news = get_tech_news(inserted_data)
+    print(scrapped_news)
+    menu()
+
+
+def menu():
+    ...
