@@ -45,5 +45,12 @@ def get_news_by_date():
     menu()
 
 
+def get_news_by_tag():
+    inserted_data = input("Tag:")
+    news_by_tag = search_engine.search_by_tag(inserted_data)
+    print(news_by_tag)
+    menu()
+
+
 def menu():
     ...
