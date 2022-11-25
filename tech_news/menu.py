@@ -70,5 +70,10 @@ def get_top_5_categories():
     menu()
 
 
+def end():
+    print("Closing... See you soon, bye!\n")
+    exit()
+
+
 def menu():
     ...
