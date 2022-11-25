@@ -37,6 +37,7 @@ Run the menu.py file
 ### Enjoy scrapping xD
 <br>
 📌 Note: All scrapped website is in portuguese, therefore you need to write your searches in portuguese.
+
 ##
 
 ## Steps of development
