@@ -1,4 +1,4 @@
-# Data Scrapping Project
+# Web Scrapping Project
 
 ## Developed by
 - [@Rafaqfg](https://www.linkedin.com/in/rafaelqfg/)
