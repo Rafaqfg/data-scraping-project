@@ -51,10 +51,10 @@ Run the menu.py file
 | Create the function search_by_title | :heavy_check_mark:
 | create the function search_by_date | :heavy_check_mark:
 | Create the function search_by_tag	| :heavy_check_mark:
-| Crie a função search_by_category | :heavy_check_mark:
+| Create the function search_by_category | :heavy_check_mark:
 | Create the function top_5_news | :heavy_check_mark:
 | Create the function top_5_categories | :heavy_check_mark:
-| Create the analyzer_menu function	| :heavy_check_mark:
+| Create the menu function	| :heavy_check_mark:
 | Implement the menu features | :heavy_check_mark:
 
 ## Gif of the application
