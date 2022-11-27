@@ -10,11 +10,11 @@ Development: Python, Docker, pymongo, beautifulsoup4 and MongoDB. <br>
 ## How to run the application with Docker (you need have already docker-compose installed in your machine)<br>
 Clone the repository
 ```bash
-  git clone git@github.com:Rafaqfg/data-scraping-project.git
+  git clone git@github.com:Rafaqfg/web-scraping-project-Python.git
 ```
 Enter in the project folder
 ```bash
-  cd data-scraping-project-Python
+  cd web-scraping-project-Python
 ```
 Create and activate the virtual environment for the project
 ```bash
